@@ -1,6 +1,7 @@
 // src/components/Galeria.jsx
 import React from 'react';
 import styled from 'styled-components';
+import promo1 from '../src/assets/img/promocional1.jpg';
 
 const Section = styled.section`
   background-color: #f9f9f9;
@@ -49,7 +50,7 @@ const Title = styled.h4`
 `;
 
 const imagenes = [
-  { id: 1, src: '../src/assets/img/promocional1.jpg', titulo: 'Dia de la Amistad' },
+  { id: 1, src: promo1, titulo: 'Dia de la Amistad' },
   { id: 2, src: '../src/assets/img/promocional2.jpg', titulo: 'Festividades Decembrinas' },
   { id: 3, src: '../src/assets/img/promocional3.jpg', titulo: 'Apoyo al medio ambiente' },
   /*{ id: 4, src: '../src/assets/img/servicio4.jpg', titulo: 'Imagen 4' },
@@ -61,7 +62,7 @@ const Galeria = () => {
   return (
     <Section id="galeria" aria-labelledby="galeria-heading">
       <Container>
-        <HeadTitle id="galeria-heading" style={{ textAlign: 'center', marginBottom: '2rem' }}>
+        <HeadTitle id="galeria-heading">
           Galería de participacion con la comunidad
         </HeadTitle>
         <Grid>
