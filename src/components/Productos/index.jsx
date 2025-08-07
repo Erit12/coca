@@ -6,18 +6,18 @@ import { agregarAlCarrito } from '../../store/carritoSlice';
 
 
 const productos = [
-  { id: 1, nombre: 'Coca-Cola 600ml', precio: 20, imagen: '../src/assets/img/producto1.jpg' },
-  { id: 2, nombre: 'Coca-Cola Light 600ml', precio: 22, imagen: '../src/assets/img/producto2.jpg' },
-  { id: 3, nombre: 'Coca-Cola Sin Azúcar 600ml', precio: 24, imagen: '../src/assets/img/producto3.jpg' },
-  { id: 4, nombre: 'Coca-Cola Sin Azúcar 600ml', precio: 21, imagen: '../src/assets/img/producto4.jpg' },
-  { id: 5, nombre: 'Coca-Cola Sin Azúcar 600ml', precio: 29, imagen: '../src/assets/img/producto5.jpg' },
-  { id: 6, nombre: 'Coca-Cola Sin Azúcar 600ml', precio: 42, imagen: '../src/assets/img/producto6.jpg' },
-  { id: 7, nombre: 'Coca-Cola Sin Azúcar 600ml', precio: 38, imagen: '../src/assets/img/producto7.jpg' },
-  { id: 8, nombre: 'Coca-Cola Sin Azúcar 600ml', precio: 80, imagen: '../src/assets/img/producto8.jpg' },
-  { id: 9, nombre: 'Coca-Cola Sin Azúcar 600ml', precio: 63, imagen: '../src/assets/img/producto9.jpg' },
-  { id: 10, nombre: 'Coca-Cola Sin Azúcar 600ml', precio: 98, imagen: '../src/assets/img/producto10.jpg' },
-  { id: 11, nombre: 'Coca-Cola Sin Azúcar 600ml', precio: 85.50, imagen: '../src/assets/img/producto11.jpg' },
-  { id: 12, nombre: 'Coca-Cola Sin Azúcar 600ml', precio: 99.99, imagen: '../src/assets/img/producto12.jpg' },
+  { id: 1, nombre: 'Coca-Cola 200ml', precio: 10, imagen: './img/producto1.jpg' },
+  { id: 2, nombre: 'Coca-Cola Light 600ml', precio: 22, imagen: './img/producto2.jpg' },
+  { id: 3, nombre: 'Coca-Cola Energy 350ml', precio: 26, imagen: './img/producto3.jpg' },
+  { id: 4, nombre: 'Coca-Cola Life 350ml', precio: 21, imagen: './img/producto4.jpg' },
+  { id: 5, nombre: 'Coca-Cola Promocion 500ml', precio: 29, imagen: './img/producto5.jpg' },
+  { id: 6, nombre: 'Coca-Cola Retornable 500ml', precio: 25, imagen: './img/producto6.jpg' },
+  { id: 7, nombre: 'Coca-Cola Pack 6pz 3 lts', precio: 228, imagen: './img/producto7.jpg' },
+  { id: 8, nombre: 'Coca-Cola Pack Mini 250ml', precio: 105, imagen: './img/producto8.jpg' },
+  { id: 9, nombre: 'Coca-Cola Pack 6pz 220ml', precio: 103, imagen: './img/producto9.jpg' },
+  { id: 10, nombre: 'Promo Jugo Cajita ', precio: 48, imagen: './img/producto10.jpg' },
+  { id: 11, nombre: 'Agua Mineral Topo Chico 350ml', precio: 85.50, imagen: './img/producto11.jpg' },
+  { id: 12, nombre: 'Pack Fresca-Coca-Cola 2 .5 lts', precio: 99.99, imagen: './img/producto12.jpg' },
 ];
 
 const Section = styled.section`

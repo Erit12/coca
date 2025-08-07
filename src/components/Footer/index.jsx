@@ -1,7 +1,6 @@
-// src/components/Footer.jsx
-import React from 'react';
+
 import styled from 'styled-components';
-import logoBlanco from '../../assets/img/logo-blanco.png';
+//import logoBlanco from '../../assets/img/logo-blanco.png';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const FooterWrapper = styled.footer`
@@ -86,7 +85,7 @@ const Footer = () => {
     <FooterWrapper>
       <Container>
         <Column>
-          <Logo src={logoBlanco} alt="Logo Coca-Cola Blanco" />
+          <Logo src='./img/logo-blanco.png' alt="Logo Coca-Cola Blanco" />
           <p>
             Destapa la Felicidad
           </p>

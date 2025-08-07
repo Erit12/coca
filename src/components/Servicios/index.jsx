@@ -1,5 +1,4 @@
-// src/components/Servicios.jsx
-import React from 'react';
+
 import styled from 'styled-components';
 
 const Section = styled.section`
@@ -82,21 +81,21 @@ const serviciosData = [
     titulo: 'Entrega de productos',
     texto:
       'Entregamos nuestros productos en cualquier lugar de america latina',
-    imagen: '../src/assets/img/servicios4.jpg',
+    imagen: './img/servicios4.jpg',
   },
   {
     id: 2,
     titulo: 'Diversidad de Productos',
     texto:
       'Contamos con una amplia diversidad de productos para satisfacer a todos.',
-    imagen: '../src/assets/img/servicios2.jpg',
+    imagen: './img/servicios2.jpg',
   },
   {
     id: 3,
     titulo: 'Moviliario',
     texto:
       'Contamos con una gran variedad de articulos de moviliario para cada establecimiento.',
-    imagen: '../src/assets/img/servicios3.jpg',
+    imagen: './img/servicios3.jpg',
   },
 ];
 

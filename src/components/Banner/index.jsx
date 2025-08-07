@@ -1,7 +1,6 @@
-// src/components/Banner.jsx
-import React from 'react';
+
 import styled from 'styled-components';
-import bannerImage from '../../assets/img/bannersexto.jpg';
+//import bannerImage from '../../assets/img/bannersexto.jpg';
 
 const Section = styled.section`
   position: relative;
@@ -59,7 +58,7 @@ const CTA = styled.a`
 const Banner = () => {
   return (
     <Section id="inicio">
-      <Image src={bannerImage} alt="Banner Coca-Cola" />
+      <Image src='./img/fondo-coca-refresco.jpg' alt="Banner Coca-Cola" />
       <Overlay>
         <Title>🌟 ¡Bienvenidos a Coca-Cola! 🌟 </Title>
         <Text> #BebidasQueInspiran. </Text>

@@ -1,9 +1,8 @@
-// src/components/Header.jsx
-import React from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 import styled from 'styled-components';
 import { useSelector } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '/src/assets/logo.svg';
+//import logo from '/src/assets/logo.svg';
 
 const HeaderWrapper = styled.header`
   width: 99%;
@@ -64,32 +63,30 @@ const Header = () => {
     state.carrito.items.reduce((acc, item) => acc + item.cantidad, 0)
   );
 
-  console.log(location.pathname);
   const soloInicio = location.pathname === '/productos' || location.pathname === '/carrito';
-
-  //console.log(soloInicio);
 
   return (
     <HeaderWrapper>
       <Container>
-        <Link to="/" aria-label="Inicio">
-          <Logo src={logo} alt="Logo" />
-        </Link>
-        <Nav>
-          <Link to="/">Inicio</Link>
+        <ScrollLink to="inicio" aria-label="Inicio" >
+          <Logo src='./img/logo.svg' alt="Logo" />
+        </ScrollLink>
+        <Nav role="navigation" aria-label="Main navigation">
+          <ScrollLink to="inicio">Inicio</ScrollLink>
           {!soloInicio && (
             <>
-              <a href="#nosotros">Nosotros</a>
-              <a href="#servicios">Servicios</a>
-              <a href="#galeria">Galería</a>
-              <a href="#contactenos">Contacto</a>
+              <ScrollLink to="nosotros" smooth={true} duration={500}>Nosotros</ScrollLink >
+              <ScrollLink to="servicios" smooth={true} duration={500}>Servicios</ScrollLink >
+              <ScrollLink to="galeria" smooth={true} duration={500}>Galería</ScrollLink >
+              <ScrollLink to="contactenos" smooth={true} duration={500}>Contacto</ScrollLink >
               <Link to="/productos">Productos</Link>
-              <Link to="/carrito" style={{ position: 'relative' }}>
-                🛒 Carrito
-                {totalItems > 0 && <Badge>{totalItems}</Badge>}
-              </Link>
+              
             </>
           )}
+          <Link to="/carrito" style={{ position: 'relative' }}>
+            🛒 Carrito
+            {totalItems > 0 && <Badge>{totalItems}</Badge>}
+          </Link>
         </Nav>
       </Container>
     </HeaderWrapper>
