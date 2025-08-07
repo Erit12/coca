@@ -68,9 +68,9 @@ const Header = () => {
   return (
     <HeaderWrapper>
       <Container>
-        <ScrollLink to="inicio" aria-label="Inicio" >
+        <Link to="/" aria-label="Inicio" >
           <Logo src='./img/logo.svg' alt="Logo" />
-        </ScrollLink>
+        </Link>
         <Nav role="navigation" aria-label="Main navigation">
           <ScrollLink to="inicio">Inicio</ScrollLink>
           {!soloInicio && (
