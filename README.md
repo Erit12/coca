@@ -1,4 +1,4 @@
-# 🎉 Curso Happy Dev - Sitio Web en React
+# 🎉 Coca - Cola - Sitio Web en React
 
 Este proyecto de landing page de un sitio web de una marca de refrescos muy famosa, elaborado con **React**, utilizando tecnologías modernas como **Redux Toolkit**, **React Router** y **Tailwind CSS**, y con enfoque en **accesibilidad**, **semántica HTML** y **buenas prácticas de desarrollo frontend**.
 
